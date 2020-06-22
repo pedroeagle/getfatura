@@ -22,7 +22,8 @@ def create_browser(webdriver_path):
 app = Flask(__name__) #create the Flask app
 @app.route('/', methods=['GET'])
 def get():
-    browser = create_browser('/chromedriver') #DON'T FORGET TO CHANGE THIS AS YOUR DIRECTORY
+    driver = webdriver.Chrome(executable_path=os.path.abspath(os.path.curdir)+'/chromedriver')
+    #browser = create_browser('/chromedriver') #DON'T FORGET TO CHANGE THIS AS YOUR DIRECTORY
     return "Teste"
 
 
