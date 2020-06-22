@@ -1,1 +1,1 @@
-web: gunicorn src.app:app --log-file=-
+web: gunicorn src.app:app --log-file=- --preload -b 0.0.0.0:5000 
