@@ -2,3 +2,5 @@ flask
 requests
 gunicorn
 selenium
+bs4
+
